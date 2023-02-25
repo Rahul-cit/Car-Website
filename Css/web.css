@@ -1,0 +1,166 @@
+/* common css starts*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 1100px;
+    margin: auto;
+  
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+
+}
+/* common css ends */
+
+/* Website topbar starts */
+.row img{
+    width: 30px;
+    margin-left: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 3px;
+   
+   
+}
+.row a{
+    margin-top: 5px;
+    color: aliceblue;
+    font-size: 15px;
+    margin-right: 185px;
+ 
+}
+.row a span{
+    color: orange;
+    font-size: 15px;
+}
+
+.row_2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    
+}
+.row_2 img{
+    width: 130px;
+    height: 80px;
+    margin-right: 20px;
+}
+.row_2 ul li{
+ display: inline-block;
+ margin-top: 30px;
+ position: relative;
+
+
+
+
+}
+.row_2 ul li a{
+    margin: 40px;
+    font-family: arial;
+    color: black;
+    position: relative;
+    z-index: 1;
+
+    
+  
+}
+.row_2 input{
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.row_2 button{
+       height: 20px;
+       margin-top: 30px;
+       background-color:yellow;
+       color: black;
+       border-radius: 5px;
+     
+}
+
+.row_3 img{
+    width: 1100px;
+    height: 500px;
+}
+
+/* submenu starts */
+
+
+
+.row_2 ul li #submenu{
+    position: absolute;
+    background-color: rgb(97, 94, 94);
+    width: 200px;
+    top: 50;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+   
+   
+    
+   
+   
+}
+.row_2 ul li:hover #submenu{
+    opacity: 1;
+    visibility: visible;
+   
+
+}
+.row_2 ul li #submenu li{
+   display: block;
+   color: orange;
+
+}
+.row_2 ul li #submenu li a{
+    border-bottom: 1px solid orange;
+    display: block;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.row_2 ul li #submenu li p{
+    line-height: 20px;
+    margin-left: 18px;
+    padding: 10px 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+  
+}
+.row_2 ul li:hover #submenu{
+    margin-top: 31px;
+}
+.row_2 ul li a::after{
+    content: '';
+    width: 0%;
+    height: 12%;
+    position: absolute;
+    background-color: red;
+    z-index: -1;
+    left: 0;
+    top: 100%;
+    transition: 0.5s;
+}
+ .row_2 ul li a:hover::after{
+    width: 100%;
+ }
+
+
+
+
+
+
+
+
+/* Website topbar ends */
